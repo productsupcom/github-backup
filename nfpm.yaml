@@ -1,0 +1,13 @@
+name: ""
+arch: "all"
+platform: "linux"
+version: "${version}"
+section: "utils"
+priority: extra
+maintainer: ""
+description: ""
+vendor: "Productsup"
+homepage: ""
+contents:
+  - src: ./build/github-backup
+    dst: /usr/bin/github-backup
