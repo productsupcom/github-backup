@@ -73,7 +73,7 @@ pipeline {
             }
             steps {
                 // build and set internal variable appVersion to current version
-                sh "go build -o ./build/${name} -ldflags \"-X main.version=${env.version}\""
+                sh "CGO_ENABLED=0 go build -o ./build/${name} -ldflags \"-X main.version=${env.version}\""
             }
         }
 
